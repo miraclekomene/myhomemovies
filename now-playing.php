@@ -33,7 +33,7 @@ require_once ('header.php');
             }else{
                 $backdrop = 'http://image.tmdb.org/t/p/w300'.$backdrop;
             }
-            echo '<li class="card col-md-1 col-lg-2  col-3 m-3" style=" box-shadow: 0px 5px 30px 5px"><a href="movie.php?id=' .$p->id. '" style="text-decoration: none;"><img src="'.$backdrop.'"style="width: 100%;">
+            echo '<li class="card col-md-5 col-lg-2 m-3" style=" box-shadow: 0px 5px 30px 5px"><a href="movie.php?id=' .$p->id. '" style="text-decoration: none;"><img src="'.$backdrop.'"style="width: 100%;">
             <h5 style="text-align: center; color: black;">' . $p->original_title ."(" . substr($p->release_date, 0, 4) . ")</h5>
             <h6 style='text-align: center; color: black;'><em> Rate: " . $p->vote_average . " | vote : " . $p->vote_count ."  | Popularity : ".$p->popularity."</em><h6>
             </a></li>";

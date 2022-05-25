@@ -22,7 +22,7 @@ require_once ('header.php');
         $lastpage = $popular->total_pages;
 
         foreach($popular->results as $p){
-            echo '<li class="card col-3 col-md-1 col-lg-2 m-3" style="color: black; box-shadow: 0px 5px 15px 5px"><a href="movie.php?id=' .$p->id. '" style="text-decoration: none;"><img src="'.$imgurl_1.''. $p->poster_path .'"style="width: 100%;">
+            echo '<li class="card col-md-5 col-lg-2 m-3" style="color: black; box-shadow: 0px 5px 15px 5px"><a href="movie.php?id=' .$p->id. '" style="text-decoration: none;"><img src="'.$imgurl_1.''. $p->poster_path .'"style="width: 100%;">
             <h5 style="text-align: center; color: black;">' . $p->original_title ."(" . substr($p->release_date, 0, 4) . ")</h5>
             <h6 style='text-align: center; color: black;'><em> Rate: " . $p->vote_average . " | vote : " . $p->vote_count ."  | Popularity : ".$p->popularity."</em><h6>
             <h6 style='text-align: center; color: black;'>Release :".date('d F Y', strtotime($p->release_date))."</h6></a></li>";

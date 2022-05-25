@@ -21,7 +21,7 @@ require_once ('header.php');
         
         foreach($toprated->results as $p){
             
-            echo '<li class="card col-3 col-md-1 col-lg-2 m-3" style=" box-shadow: 0px 5px 30px 5px"><a href="movie.php?id=' .$p->id. '" style="text-decoration: none;"><img src="http://image.tmdb.org/t/p/w500'. $p->poster_path .'"style="width: 100%;">
+            echo '<li class="card col-md-5 col-lg-2 m-3" style=" box-shadow: 0px 5px 30px 5px"><a href="movie.php?id=' .$p->id. '" style="text-decoration: none;"><img src="http://image.tmdb.org/t/p/w500'. $p->poster_path .'"style="width: 100%;">
             <h5 class="text-dark" style="text-align: center; font-family: "Maven Pro", sans-serif;">' . $p->original_title ."(" . substr($p->release_date, 0, 4) . ")</h5>
             <h6 class='text-dark' style='text-align: center; font-family: 'Maven Pro', sans-serif;'><em> Rate:" . $p->vote_average . " | vote : " . $p->vote_count ."</em><h6></a></li>";
         }

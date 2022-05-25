@@ -13,7 +13,7 @@ require_once ('header.php');
     <?php
     require_once('api/api_tv.php');
         foreach($tv_top->results as $tt){
-            echo '<li class="card col-3 col-md-1 col-lg-2 m-3" style=" box-shadow: 0px 5px 30px 5px"><a href="tvshow.php?id=' .$tt->id. '" style="text-decoration: none;"><img src="'.$imgurl_2.''. $tt->poster_path .'"style="width: 100%;">
+            echo '<li class="card col-md-5 col-lg-2 m-3" style=" box-shadow: 0px 5px 30px 5px"><a href="tvshow.php?id=' .$tt->id. '" style="text-decoration: none;"><img src="'.$imgurl_2.''. $tt->poster_path .'"style="width: 100%;">
             <h4 style="text-align: center; color: black;">' . $tt->original_name ."</h4>
             <h6 style='text-align: center; color: black;'><em> Rate: " . $tt->vote_average . " | vote : " . $tt->vote_count ."</em><h6>
             <h5 style='text-align: center; color: black;'>First Air Date :".date('d F Y', strtotime($tt->first_air_date))."</br >
