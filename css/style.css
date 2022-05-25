@@ -1,0 +1,131 @@
+/* dropdown */
+.dr {
+    float: left;
+    overflow: hidden;
+    }
+  
+  .dr.dropbtn {
+    font-size: 17px;  
+    border: none;
+    outline: none;
+    color: #8a8a8a;
+    padding: 0px 16px;
+    font-family: inherit;
+    margin: 0;
+    }
+  
+  .navbar a:hover, .dr:hover .dropbtn {
+    color: #fff;
+    }
+  
+  .dr-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+  
+  .dr-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+  
+  .dr-content a:hover {
+    background-color: #ddd;
+    }
+  
+  .dr:hover .dr-content {
+    display: block;
+    }
+
+/*  */
+#apiDiv {
+    border: dashed 2px #CCC;
+    padding: 10px;
+    padding-left: 20px;
+}
+  
+#apiDiv input, #apiDiv button {
+font-size: 25px;
+color: #000;
+}
+
+#apiDiv h4 {
+margin: 10px 0;
+}
+
+#apiDiv .imageDiv {
+text-align: center;
+}
+
+#apiDiv .imageDiv img {
+display: none;
+}
+
+#apiDiv #message {
+padding-top: 10px;
+}
+
+#apiDiv #message .resultDiv {
+background: #FFF;
+display: inline-block;
+}
+
+#apiDiv #message .resultDiv > p {
+color: #000;
+display: inline-block;
+width: 95%;
+padding: 10px;
+border-bottom: double 2px #CCC;
+}
+
+#apiDiv #message .resultDiv .result {
+width: 23%;
+height: 300px;
+padding: 6px;
+float: left;
+text-align: center;
+cursor: pointer;
+}
+
+#apiDiv #message .resultDiv .result img {
+    width: 75%;
+}
+
+#apiDiv #message .resultDiv .result p {
+    margin: 0;
+}
+
+#apiDiv #message .resultDiv .result p a {
+    color: #808080;
+    text-decoration: none;
+    font-size: 20px;
+    height: 100px;
+}
+
+#apiDiv #message .resultDiv .result p a:hover {
+    text-decoration: underline;
+}
+
+#myModal {
+color: #000;
+}
+
+#reset {
+padding: 5px 10px;
+background: #4CAF50;
+border: none;
+color: #FFF;
+cursor: pointer;
+}
+
+#reset:hover {
+color: #4CAF50;
+background: #FFF;
+    }
