@@ -2,7 +2,7 @@
 require_once ('conf/info.php');
 
 $id_tv = $_GET['id'];
-// include_once "api/api_movie_similar.php";
+include_once "api/api_tv_video_id.php";
 include_once "api/api_tv_id.php";
 include_once "api/api_tv.php";
 $title = "Detail Tv Series(".$tv_id->name.")";
@@ -23,13 +23,12 @@ if(isset($_GET['id'])){
 ?>
 <div class="card bg-dark text-white" style="border-radius: 40px;">
     <div class="p-3 mb-2" style="background-image:url(<?php echo $imgurl_2 ?><?php echo $tv_id->backdrop_path ?>); border-radius: 40px; width:100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;">
-    <div style="background-color: rgba(0, 0, 0, 0.5); border-radius: 40px;">
+        background-size: cover; background-position: center; background-repeat: no-repeat;">
 
-    <img src="<?php echo $imgurl_2 ?><?php echo $tv_id->poster_path ?>" alt="This Tv Series Does Not have An Image" style="border-radius: 40px; border: 1px solid grey;">
-    </div>
+        <div style="background-color: rgba(0, 0, 0, 0.5); border-radius: 40px;">
+
+            <img src="<?php echo $imgurl_2 ?><?php echo $tv_id->poster_path ?>" class="col-6 col-md-3" alt="This Tv Series Does Not have An Image" style="border-radius: 40px; border: 1px solid grey;">
+        </div>
     </div>
 
     <div class="px-4 pt-4">
@@ -102,11 +101,14 @@ if(isset($_GET['id'])){
     ?>
 </ul>
 
+</div>
+
+<div class="offset-lg-2 offset-md-2 offset-1">
 <?php
-    // foreach($movie_video_id->results as $video){
-    //     echo '<iframe width="560" height="315" class="m-1" src="'."https://www.youtube.com/embed/".$video->key.'"frameborder="0"
-    //         allowfullscreen></iframe>';
-    // }
+    foreach($tv_video_id->results as $video){
+        echo '<iframe height="285" class="m-1 col-11 col-md-4 col-lg-3" src="'."https://www.youtube.com/embed/".$video->key.'"frameborder="0"
+            allowfullscreen></iframe>';
+    }
 
 ?>
 </div>

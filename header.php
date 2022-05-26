@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="width: 100;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +41,7 @@
                 </button>
                 <div class="dr-content">
                 <a href="index.php">Home</a>
-                <a href="popular.php">Popular</a>
+                <a href="toprated.php">Top Rated</a>
                 <a href="tv-series.php">Tv Series</a>
                 <a href="now-playing.php">Now Playing</a>
                 <a href="upcoming.php">Upcoming</a>
@@ -69,7 +69,7 @@
 
             <a href="index.php" class="d-none d-sm-none d-md-none text-center d-lg-block py-2 col-2 col-md-2 h-25" style="color: #fff; font-size: 14px; font-weight: bold; text-decoration: none; background-color: green; margin-right: 8px; margin-right: 10px; border-radius:50px;">Home</a>
 
-            <a href="popular.php" class="d-none d-sm-none d-md-none text-center d-lg-block py-2 col-md-2 h-25" style="color: #fff; font-size: 14px; font-weight: bold; text-decoration: none; background-color: green; margin-right: 8px; border-radius:50px;">Popular</a>
+            <a href="toprated.php" class="d-none d-sm-none d-md-none text-center d-lg-block py-2 col-md-2 h-25" style="color: #fff; font-size: 14px; font-weight: bold; text-decoration: none; background-color: green; margin-right: 8px; border-radius:50px;">Top Rated</a>
 
             <a href="tv-series.php" class="d-none d-none d-sm-none text-center d-md-none d-lg-block py-2 col-md-2 h-25" style="color: #fff; font-size: 14px; font-weight: bold; text-decoration: none; background-color: green; margin-right: 8px; border-radius:50px;">TV Series</a>
             

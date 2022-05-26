@@ -1,40 +1,40 @@
 <?php
 require_once ('conf/info.php');
-$title = "Popular";
+$title = "Welcome To";
 require_once ('header.php');
 ?>
 
-<h1 class="text-center"> ~ Popular Movies ~ </h1>
-
+<h1 class="text-center"> ~ Top Rated Movies ~ </h1>
 <hr>
 <div class="container">
     <div class="row">
-            
-        <?php
-            $page = 1;
+        <?php 
+            $page=1; 
 
-            if(isset($_GET['page'])){
+            if (isset($_GET['page'])) {
                 $page = $_GET['page'];
-            }else{
+            } else {
                 $page = $page;
             }
 
-            require_once ('api/api_popular.php');
-            $lastpage = $popular->total_pages;
-
-            foreach($popular->results as $p){
-                echo '<a href="movie.php?id=' .$p->id. '"class="col-11 col-md-5 pt-2 col-lg-2 m-3" style="text-decoration: none;"><div class="card h-100" style=" box-shadow: 0px 5px 15px 5px black"><img src="'.$imgurl_1.''. $p->poster_path .'"style="width: 100%;">
-                <h5 style="text-align: center; color: black;">' . $p->original_title ."(" . substr($p->release_date, 0, 4) . ")</h5>
-                <h6 style='text-align: center; color: black;'><em> Rate: " . $p->vote_average . " | vote : " . $p->vote_count ."  | Popularity : ".$p->popularity."</em><h6>
-                <h6 style='text-align: center; color: black;'>Release :".date('d F Y', strtotime($p->release_date))."</h6></div></a>";
-
+    
+            require_once ('api/api_toprated.php');
+            
+            foreach($toprated->results as $p){
+                
+                echo '<a href="movie.php?id=' .$p->id. '"class="col-11 col-md-5 pt-2 col-lg-2 m-3" style="text-decoration: none;"><div class="card h-100" style=" box-shadow: 0px 5px 15px 5px black"><img src="http://image.tmdb.org/t/p/w500'. $p->poster_path .'"style="width: 100%;">
+                <h5 class="text-dark" style="text-align: center; font-family: "Maven Pro", sans-serif;">' . $p->original_title ."(" . substr($p->release_date, 0, 4) . ")</h5>
+                <h6 class='text-dark' style='text-align: center; font-family: 'Maven Pro', sans-serif;'><em> Rate:" . $p->vote_average . " | vote : " . $p->vote_count ."</em><h6></div></a>";
             }
+            
 
-            $total_pages = 499;
+
+
+            $total_pages = $toprated->total_pages;
             
         ?>
-            
-        <ul class="pagination mx-3" >
+        
+        <ul class="pagination mx-3">
 
             <li class="col-2 text-center bg-success mx-1 p-2"><a href="?&page=1" style="text-decoration: none; font-size: 20px; color: white;">First</a></li>
 
@@ -48,11 +48,10 @@ require_once ('header.php');
 
             <li class="col-2 text-center bg-success mx-1 p-2"><a href="?&page=<?php echo $total_pages; ?>" style="text-decoration: none; font-size: 20px; color: white;">Last</a></li>
 
-        </ul> 
+        </ul>
 
     </div>
 
 </div>
-
 </body>
 </html>
