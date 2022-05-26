@@ -47,7 +47,7 @@ require_once ('api/api_search.php');
                     $backdrop = 'http://image.tmdb.org/t/p/w300'.$backdrop;
                 }
                 //echo <img src="'.$imgurl_1.''. $p->poster_path .'"style="width: 100%;">
-                echo '<a href="movie.php?id=' .$id.'"class="col-10 col-md-5 pt-2 col-lg-2 m-3" style="text-decoration: none; color: black;"><div class="card h-100" style=" box-shadow: 0px 5px 20px 5px black"><img src="'.$backdrop.'"alt="No Image" style="width: 100%;">
+                echo '<a href="movie.php?id=' .$id.'"class="col-11 col-md-5 pt-2 col-lg-2 m-3" style="text-decoration: none; color: black;"><div class="card h-100" style=" box-shadow: 0px 5px 20px 5px black"><img src="'.$backdrop.'"alt="No Image" style="width: 100%;">
                 <h5 style="text-align: center;">' . $title .'</h5>
                 <h6 style="text-align: center;">Popularity :' . $popularity .'</h6></div></a>';
             }
@@ -72,7 +72,7 @@ require_once ('api/api_search.php');
                 }else{
                     $backdrop = 'http://image.tmdb.org/t/p/w300'.$backdrop;
                 }
-                echo '<a href="tvshow.php?id=' .$id. '"class="col-10 col-md-5 pt-2 col-lg-2 m-3" style="text-decoration: none; color: black;"><div class="card h-100" style="box-shadow: 0px 5px 20px 5px black"><img src="'.$backdrop.'"style="width: 100%;">
+                echo '<a href="tvshow.php?id=' .$id. '"class="col-11 col-md-5 pt-2 col-lg-2 m-3" style="text-decoration: none; color: black;"><div class="card h-100" style="box-shadow: 0px 5px 20px 5px black"><img src="'.$backdrop.'"style="width: 100%;">
                 <h5 style="text-align: center;">' . $title .'</h5></div></a>';
             }
         }
@@ -81,7 +81,7 @@ require_once ('api/api_search.php');
             
         ?>
             
-            <ul class="pagination mx-3" >
+            <ul class="pagination mx-2" >
         
                 <li class="col-2 text-center bg-success mx-1 p-2"><a href="?channel=<?php echo $channel; ?>&search=<?php echo $input; ?>&page=1" style="text-decoration: none; font-size: 20px; color: white;">First</a></li>
         
