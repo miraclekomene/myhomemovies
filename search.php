@@ -72,7 +72,7 @@ require_once ('api/api_search.php');
                 }else{
                     $backdrop = 'http://image.tmdb.org/t/p/w300'.$backdrop;
                 }
-                echo '<a href="tvshow.php?id=' .$id. '"class="col-11 col-md-5 pt-2 col-lg-2 m-3" style="text-decoration: none;"><div class="card h-100" style="box-shadow: 0px 5px 20px 5px black"><img src="'.$backdrop.'"style="width: 100%;">
+                echo '<a href="tvshow.php?id=' .$id. '"class="col-11 col-md-5 pt-2 col-lg-2 m-3" style="text-decoration: none; color: black;"><div class="card h-100" style="box-shadow: 0px 5px 20px 5px black"><img src="'.$backdrop.'"style="width: 100%;">
                 <h5 style="text-align: center;">' . $title .'</h5></div></a>';
             }
         }
