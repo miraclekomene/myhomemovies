@@ -2,7 +2,7 @@
 
 $apikey = "c9e0274b13597713a26a1de12ec39786";
 
-$sitename = "My Home Videos";
+$sitename = "Mk Home Videos";
 $tagline = "best video update";
 $email = "miraclekomene15@gmail.com";
 $url = "https://api.themoviedb.org/3/movie/popular";
