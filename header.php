@@ -24,13 +24,13 @@
     </title>
 </head>
 <body style="overflow-x: hidden; margin: 0px; width:100%;">
-    <div style="padding: 10px 20px 10px 30px; border-bottom-left-radius: 100px; border-bottom-right-radius:100px; height: 12rem; width:100%;" class="bg-dark mb-5 text-white">
+    <div style="padding: 10px 10px 10px 30px; border-bottom-left-radius: 80px; border-bottom-right-radius:80px; height: 12rem; width:100%;" class="bg-dark mb-5 text-white">
         <div style="display: flex; flex: flex-wrap;">
             <img src="image/logo2.png" style="width: 70px; height: 50px;">
 
-            <h1 class="mx-3">
+            <h3 class="mx-3" style="padding-top: 15px;">
                 <?php echo $sitename ?>
-            </h1>
+            </h3>
         </div>
 
         <p>
@@ -39,7 +39,7 @@
             </small>
         </p>
 
-        <div class="bg-dark d-sm-block mx-2 d-md-block d-block d-lg-none px-2 bg-danger" style="margin-bottom: 3.5em;">
+        <div class="bg-dark d-sm-block d-md-block d-block d-lg-none px-2 bg-danger" style="margin-left: -5px; margin-bottom: 3.5em;">
             <div class="dr">
                 <button class="dropbtn bg-dark text-white" style="border: 1px solid grey; border-radius: 30px; outline:none; height: 35px;">Categories
                 <i class="fa fa-caret-down text-white"></i>
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div style="float: right; " class="mb-2 mx-3">
+        <div style="float: right;" class="mb-2 mx-1">
 
             <form action="search.php" method="get">
                 <select name="channel" class="bg-dark px-2" style="margin-left: 0px; height: 35px; border-radius: 30px; color: white; outline:none;" required>
@@ -62,7 +62,7 @@
                     <option value="tv"> TV Show </option>
                 </select>
 
-                <input placeholder="search..." type="text" class="px-4 col-4 col-md-6" name="search" style="border: none; border-bottom: 1px solid #fff; border-left: 1px solid #fff; background: transparent; border-bottom-left-radius: 50px; outline: none; height: 35px; color: #fff; font-size: 16px;" required>
+                <input placeholder="search" type="text" class="col-4 col-md-6" name="search" style="padding-left: 15px; border: none; border-bottom: 1px solid #fff; border-left: 1px solid #fff; background: transparent; border-bottom-left-radius: 50px; outline: none; height: 35px; color: #fff; font-size: 16px;" required>
                 
                 <button type="submit" style="height: 35px; border-top-left-radius: 50px; background:linear-gradient(green,yellow); border-bottom-right-radius: 50px;  outline: none; border: none; position: relative; left: -35px; z-index:-50%; top: 0.0rem;" class="px-4"><i class ="bx bx-search"></i></button>
 
