@@ -26,10 +26,10 @@
 <body style="overflow-x: hidden; margin: 0px; width:100%;">
     <div style="padding: 10px 10px 10px 30px; border-bottom-left-radius: 80px; border-bottom-right-radius:80px; height: 12rem; width:100%;" class="bg-dark mb-5 text-white">
         <div style="display: flex; flex: flex-wrap;">
-            <img src="image/logo2.png" style="width: 70px; height: 50px;">
+            <a href="index.php"><img src="image/logo2.png" style="width: 70px; height: 50px;"></a>
 
             <h3 class="mx-3" style="padding-top: 15px;">
-                <?php echo $sitename ?>
+                <a href="index.php" style="text-decoration: none; color: white;"><?php echo $sitename ?></a>
             </h3>
         </div>
 
